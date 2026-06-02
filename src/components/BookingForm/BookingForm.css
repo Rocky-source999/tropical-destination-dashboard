@@ -1,0 +1,25 @@
+.booking-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.booking-form button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+}
