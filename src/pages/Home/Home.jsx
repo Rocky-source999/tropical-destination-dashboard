@@ -27,23 +27,17 @@ function Home() {
       <section className="hero">
         <div>
           <h1>Tropical Destinations For Students</h1>
-          <p>
-            Explore amazing tropical locations with
-            special discounts.
-          </p>
+          <p>Explore amazing tropical locations with special discounts.</p>
           <button>See More</button>
         </div>
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-          alt=""/>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt=""/>
       </section>
       <section className="search-section">
         <input
           type="text"
           placeholder="Search destination..."
           value={search}
-          onChange={(e) =>
-            setSearch(e.target.value)
+          onChange={(e) => setSearch(e.target.value)
           }/>
       </section>
       <section className="destinations">
@@ -68,10 +62,7 @@ function Home() {
       <section className="discount">
         <div>
           <h2>Student Discounts Available</h2>
-          <p>
-            Get up to 15% OFF on selected
-            destinations.
-          </p>
+          <p>Get up to 15% OFF on selected destinations.</p>
           <button>Book Now</button>
         </div>
       </section>

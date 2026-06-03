@@ -1,16 +1,11 @@
 import { useState } from "react";
 
 function BookingForm({ destinations }) {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    date: "",
-    destination: "",
-  });
+  const [form, setForm] = useState({name: "",email: "",date: "",destination: "",});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+    console.log(JSON.stringify(form));
     alert("Booking Submitted");
   };
 
@@ -20,23 +15,19 @@ function BookingForm({ destinations }) {
       <input
         type="text"
         placeholder="Name"
-        onChange={(e) =>
-          setForm({ ...form, name: e.target.value })
+        onChange={(e) => setForm({ ...form, name: e.target.value })
         }/>
       <input
         type="email"
         placeholder="Email"
-        onChange={(e) =>
-          setForm({ ...form, email: e.target.value })
+        onChange={(e) => setForm({ ...form, email: e.target.value })
         }/>
       <input
         type="date"
-        onChange={(e) =>
-          setForm({ ...form, date: e.target.value })
+        onChange={(e) => setForm({ ...form, date: e.target.value })
         }/>
       <select
-        onChange={(e) =>
-          setForm({ ...form, destination: e.target.value })
+        onChange={(e) => setForm({ ...form, destination: e.target.value })
         }>
         <option>Select Destination</option>
         {destinations.map((item) => (
@@ -45,7 +36,7 @@ function BookingForm({ destinations }) {
           </option>
         ))}
       </select>
-      <button>Book Now</button>
+      <button onClick={handleSubmit}>Book Now</button>
     </form>
   );
 }
