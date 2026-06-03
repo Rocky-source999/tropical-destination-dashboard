@@ -36,7 +36,7 @@ function BookingForm({ destinations }) {
           </option>
         ))}
       </select>
-      <button onClick={handleSubmit}>Book Now</button>
+      <button>Book Now</button>
     </form>
   );
 }
